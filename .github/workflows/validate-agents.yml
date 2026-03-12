@@ -1,0 +1,60 @@
+name: Validate Agent Manifests
+
+on:
+  push:
+    paths:
+      - 'agents/**/*.json'
+  pull_request:
+    paths:
+      - 'agents/**/*.json'
+
+jobs:
+  validate-manifests:
+    runs-on: ubuntu-latest
+    name: Validate declarative agent manifest JSON
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install jsonschema
+
+      - name: Validate manifest JSON files
+        run: |
+          python - <<'EOF'
+          import json
+          import sys
+          from pathlib import Path
+
+          errors = []
+          manifest_files = list(Path("agents").rglob("manifest.json"))
+
+          required_fields = ["schema_version", "name_for_human", "name_for_model",
+                             "description_for_human", "description_for_model", "instructions"]
+
+          for manifest_path in manifest_files:
+              try:
+                  with open(manifest_path) as f:
+                      data = json.load(f)
+                  
+                  for field in required_fields:
+                      if field not in data:
+                          errors.append(f"{manifest_path}: Missing required field '{field}'")
+                  
+                  print(f"OK: {manifest_path}")
+              except json.JSONDecodeError as e:
+                  errors.append(f"{manifest_path}: Invalid JSON - {e}")
+
+          if errors:
+              for error in errors:
+                  print(f"ERROR: {error}", file=sys.stderr)
+              sys.exit(1)
+          
+          print(f"\nValidated {len(manifest_files)} manifest(s). All passed.")
+          EOF
