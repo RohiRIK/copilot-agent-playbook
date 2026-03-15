@@ -1,12 +1,16 @@
 ---
 title: Secure Configuration Drift Reporter
-slug: secure-config-drift-reporter
+emoji: "🔍"
 domain: compliance
-agent_type: copilot-studio
+architecture: copilot-studio
 effort: medium
 impact: high
-status: idea
+risk: medium
+approval_required: false
+data_sources: [Microsoft Secure Score, Purview, M365 Admin Center]
 tags: [purview, m365, configuration, baseline, drift, compliance]
+maturity: concept
+last_updated: 2026-03-15
 ---
 
 # Secure Configuration Drift Reporter
