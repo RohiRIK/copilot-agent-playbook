@@ -1,7 +1,7 @@
 site_name: Copilot Agent Playbook
 site_description: 35 production-ready Microsoft 365 Copilot agent ideas for enterprise environments
-site_url: https://your-org.github.io/copilot-agent-playbook
-repo_url: https://github.com/your-org/copilot-agent-playbook
+site_url: https://rohirik.github.io/copilot-agent-playbook
+repo_url: https://github.com/RohiRIK/copilot-agent-playbook
 repo_name: copilot-agent-playbook
 
 theme:
@@ -58,7 +58,10 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/your-org/copilot-agent-playbook
+      link: https://github.com/RohiRIK/copilot-agent-playbook
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
 
 nav:
   - Home: index.md
