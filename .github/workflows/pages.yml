@@ -38,15 +38,9 @@ jobs:
 
       - name: Resolve symlinks in docs/
         run: |
-          cd docs
-          for link in ideas agents examples; do
-            if [ -L "$link" ]; then
-              target=$(readlink "$link")
-              rm "$link"
-              cp -r "$target" "$link"
-            fi
-          done
-          cd ..
+          cp -rL docs/ docs_resolved/
+          rm -rf docs/
+          mv docs_resolved/ docs/
 
       - name: Generate catalog files
         run: python scripts/build/generate-catalog.py
