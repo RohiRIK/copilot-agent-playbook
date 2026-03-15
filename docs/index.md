@@ -63,11 +63,11 @@ flowchart LR
 
 **For IT Architects:** Start with [Agent Patterns](architecture/agent-patterns.md) to understand which tier fits your use case, then browse the [Agent Catalog](catalog/index.md) for ideas in your domain.
 
-**For Security Teams:** Jump directly to [SecOps agents](../ideas/secops/phishing-response.md) or the [SecOps Starter Pack](../examples/secops-starter-pack/README.md).
+**For Security Teams:** Jump directly to [SecOps agents](ideas/secops/phishing-response.md) or the [SecOps Starter Pack](examples/secops-starter-pack/README.md).
 
-**For Governance Leads:** Review the [Governance Framework](architecture/governance-framework.md) first, then explore [Compliance agents](../ideas/compliance/copilot-readiness-governance.md).
+**For Governance Leads:** Review the [Governance Framework](architecture/governance-framework.md) first, then explore [Compliance agents](ideas/compliance/copilot-readiness-assessor.md).
 
-**For Developers:** See the [Deployment Guide](architecture/deployment-guide.md) and the [Break-Glass Validator implementation](../agents/declarative/break-glass-validator/README.md) as a working example.
+**For Developers:** See the [Deployment Guide](architecture/deployment-guide.md) and the [Break-Glass Validator implementation](agents/declarative/break-glass-validator/README.md) as a working example.
 
 ---
 
@@ -75,11 +75,11 @@ flowchart LR
 
 | Domain | Agents | Start Here |
 |---|---|---|
-| Identity | 10 | [Break-Glass Validator](../ideas/identity/break-glass-account-validator.md) |
-| Endpoint | 5 | [Device Compliance Drift](../ideas/endpoint/device-compliance-drift.md) |
-| SecOps | 8 | [SOC Triage Summarizer](../ideas/secops/soc-triage-summarizer.md) |
-| Compliance | 5 | [Copilot Readiness](../ideas/compliance/copilot-readiness-governance.md) |
-| Collaboration | 6 | [Knowledge Base RAG](../ideas/collaboration/knowledge-base-rag.md) |
+| Identity | 10 | [Break-Glass Validator](ideas/identity/break-glass-validator.md) |
+| Endpoint | 5 | [Device Compliance Drift](ideas/endpoint/device-compliance-drift.md) |
+| SecOps | 8 | [SOC Triage Summarizer](ideas/secops/soc-triage-summarizer.md) |
+| Compliance | 5 | [Copilot Readiness](ideas/compliance/copilot-readiness-assessor.md) |
+| Collaboration | 6 | [Knowledge Base RAG](ideas/collaboration/knowledge-base-rag.md) |
 
 ---
 

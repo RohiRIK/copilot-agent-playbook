@@ -136,6 +136,6 @@ flowchart TD
 
 ## Related Agents
 
-- [MFA Registration Gap Finder](mfa-registration-gap-finder.md) — Identifies users who lack compliant MFA, making them more likely to generate risk events
+- [MFA Registration Gap Finder](mfa-gap-finder.md) — Identifies users who lack compliant MFA, making them more likely to generate risk events
 - [Phishing Response](../secops/phishing-response.md) — Handles the downstream response when a risk event is confirmed as a compromise
-- [Break-Glass Account Validator](break-glass-account-validator.md) — Ensures emergency accounts are never flagged as risky
+- [Break-Glass Account Validator](break-glass-validator.md) — Ensures emergency accounts are never flagged as risky

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.0/schema.json",
+  "version": "v1.0",
+  "name": "Data Classification Assistant",
+  "description": "Helps users apply the correct sensitivity label and helps compliance admins assess label coverage. Ask me which label to use, what a label does, or which sites need better labeling.",
+  "instructions": "See instructions.md for the full system prompt.",
+  "conversation_starters": [
+    { "text": "Which sensitivity label should I use for a document with salary data?" },
+    { "text": "What does the 'Highly Confidential' label actually do?" },
+    { "text": "Show me the top 10 SharePoint sites with the lowest label coverage" }
+  ],
+  "capabilities": [
+    { "name": "WebSearch", "enabled": false },
+    { "name": "OneDriveAndSharePoint", "items_by_url": [{ "url": "https://yourtenant.sharepoint.com/sites/DataClassification" }] }
+  ],
+  "actions": [{ "id": "graph-purview-labels-query", "file": "graph-plugin.json" }]
+}

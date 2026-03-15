@@ -1,0 +1,33 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.0/schema.json",
+  "version": "v1.0",
+  "name": "Smart Scheduling & Focus Time Agent",
+  "description": "Analyzes your calendar, blocks focus time proactively, suggests optimal meeting slots for your team, and flags scheduling conflicts. Ask me to protect your focus time, schedule a team meeting, or show your weekly meeting load.",
+  "instructions": "See instructions.md for the full system prompt.",
+  "conversation_starters": [
+    {
+      "text": "Block 2 hours of focus time every morning this week"
+    },
+    {
+      "text": "Find a 1-hour slot for a team meeting with Sarah and James this week"
+    },
+    {
+      "text": "How many hours of focus time vs meetings do I have this week?"
+    },
+    {
+      "text": "Flag any back-to-back meetings on my calendar this week"
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "WebSearch",
+      "enabled": false
+    }
+  ],
+  "actions": [
+    {
+      "id": "graph-calendar-plugin",
+      "file": "graph-plugin.json"
+    }
+  ]
+}

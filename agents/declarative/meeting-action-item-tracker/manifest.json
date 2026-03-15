@@ -1,0 +1,33 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.0/schema.json",
+  "version": "v1.0",
+  "name": "Meeting Action Item Tracker",
+  "description": "Extracts action items from Teams meeting transcripts, assigns them to owners, creates Planner tasks, and sends follow-up reminders. Ask me to extract action items from a meeting, check open items, or remind your team about overdue tasks.",
+  "instructions": "See instructions.md for the full system prompt.",
+  "conversation_starters": [
+    {
+      "text": "Extract action items from my 2pm standup meeting"
+    },
+    {
+      "text": "What action items from last week's planning meeting are still open?"
+    },
+    {
+      "text": "Remind everyone with overdue action items from the Q2 kickoff"
+    },
+    {
+      "text": "Create a Planner task for the action items from today's meeting"
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "WebSearch",
+      "enabled": false
+    }
+  ],
+  "actions": [
+    {
+      "id": "graph-meetings-plugin",
+      "file": "graph-plugin.json"
+    }
+  ]
+}

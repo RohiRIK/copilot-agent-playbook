@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.0/schema.json",
+  "version": "v1.0",
+  "name": "App Packaging Advisor",
+  "description": "Helps engineers create correctly-configured Intune Win32 and MSIX app packages. Ask me about install commands, detection rules, return codes, or packaging best practices.",
+  "instructions": "See instructions.md for the full system prompt.",
+  "conversation_starters": [
+    { "text": "How do I package Adobe Acrobat Reader 2024 as a Win32 app?" },
+    { "text": "What detection rule should I use for an MSI with a non-standard path?" },
+    { "text": "What return codes should I configure for a .NET installer?" }
+  ],
+  "capabilities": [
+    { "name": "WebSearch", "enabled": false },
+    { "name": "OneDriveAndSharePoint", "items_by_url": [{ "url": "https://yourtenant.sharepoint.com/sites/AppPackaging" }] }
+  ],
+  "actions": [{ "id": "graph-intune-apps-query", "file": "graph-plugin.json" }]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.0/schema.json",
+  "version": "v1.0",
+  "name": "Autopilot Readiness Checker",
+  "description": "Validates whether devices, profiles, and tenant configuration meet Windows Autopilot prerequisites before deployment. Ask me to run a pre-flight check on a device serial number.",
+  "instructions": "See instructions.md for the full system prompt.",
+  "conversation_starters": [
+    { "text": "Check if device serial ABC123 is ready for Autopilot deployment" },
+    { "text": "Why would an Autopilot device get stuck on the Enrollment Status Page?" },
+    { "text": "Are all apps in our ESP currently healthy?" }
+  ],
+  "capabilities": [{ "name": "WebSearch", "enabled": false }],
+  "actions": [{ "id": "graph-autopilot-readiness-query", "file": "graph-plugin.json" }]
+}

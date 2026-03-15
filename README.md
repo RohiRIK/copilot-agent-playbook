@@ -69,16 +69,16 @@ All 35 agents grouped by domain. Impact, effort, and risk are rated Low / Medium
 
 | Agent | Impact | Effort | Risk | Architecture |
 |---|---|---|---|---|
-| [Break-Glass Account Validator](ideas/identity/break-glass-account-validator.md) | High | Low | Low | Declarative |
-| [Secrets & Certificates Expiry Monitor](ideas/identity/secrets-certificates-expiry.md) | Medium | Low | Low | Power Automate |
-| [Conditional Access Change Companion](ideas/identity/conditional-access-change-companion.md) | High | Medium | Medium | Copilot Studio |
+| [Break-Glass Validator](ideas/identity/break-glass-validator.md) | High | Low | Low | Declarative |
+| [Secrets Expiry Monitor](ideas/identity/secrets-expiry-monitor.md) | Medium | Low | Low | Power Automate |
+| [Conditional Access Companion](ideas/identity/conditional-access-companion.md) | High | Medium | Medium | Copilot Studio |
 | [Entra Sign-In Risk Explainer](ideas/identity/entra-signin-risk-explainer.md) | Medium | Low | Low | Declarative |
-| [MFA Registration Gap Finder](ideas/identity/mfa-registration-gap-finder.md) | High | Low | Low | Declarative |
-| [Least Privilege Builder (PIM)](ideas/identity/least-privilege-builder-pim.md) | High | Low | Low | Declarative |
-| [App Registration Governance](ideas/identity/azure-app-registration-governance.md) | High | Medium | Medium | Copilot Studio |
+| [MFA Gap Finder](ideas/identity/mfa-gap-finder.md) | High | Low | Low | Declarative |
+| [Least Privilege Builder (PIM)](ideas/identity/least-privilege-builder.md) | High | Low | Low | Declarative |
+| [App Registration Governance](ideas/identity/app-registration-governance.md) | High | Medium | Medium | Copilot Studio |
 | [Onboarding Access Assistant](ideas/identity/onboarding-access-assistant.md) | Medium | Medium | Medium | Copilot Studio |
 | [Privileged Access Review](ideas/identity/privileged-access-review.md) | High | Medium | Medium | Copilot Studio |
-| [Passwordless Rollout Coach](ideas/identity/passwordless-rollout-coach.md) | High | High | Medium | Hybrid |
+| [Passwordless Rollout](ideas/identity/passwordless-rollout.md) | High | High | Medium | Hybrid |
 
 ### Endpoint Agents (5)
 
@@ -88,7 +88,7 @@ All 35 agents grouped by domain. Impact, effort, and risk are rated Low / Medium
 | [Autopilot Readiness](ideas/endpoint/autopilot-readiness.md) | Medium | Medium | Low | Declarative |
 | [Intune Troubleshooting](ideas/endpoint/intune-troubleshooting.md) | Medium | Medium | Low | Copilot Studio |
 | [App Packaging Advisor](ideas/endpoint/app-packaging-advisor.md) | Medium | Low | Low | Declarative |
-| [Stale Device Cleanup Planner](ideas/endpoint/stale-device-cleanup-planner.md) | Medium | Medium | Medium | Copilot Studio |
+| [Stale Device Cleanup](ideas/endpoint/stale-device-cleanup.md) | Medium | Medium | Medium | Copilot Studio |
 
 ### SecOps Agents (8)
 
@@ -107,10 +107,10 @@ All 35 agents grouped by domain. Impact, effort, and risk are rated Low / Medium
 
 | Agent | Impact | Effort | Risk | Architecture |
 |---|---|---|---|---|
-| [Copilot Readiness & Governance](ideas/compliance/copilot-readiness-governance.md) | High | High | Medium | Hybrid |
+| [Copilot Readiness Assessor](ideas/compliance/copilot-readiness-assessor.md) | High | High | Medium | Hybrid |
 | [Policy-to-Enforcement Mapper](ideas/compliance/policy-to-enforcement-mapper.md) | Medium | Medium | Medium | Copilot Studio |
 | [Data Classification Assistant](ideas/compliance/data-classification-assistant.md) | Medium | Medium | Medium | Declarative |
-| [External Sharing Exception Workflow](ideas/compliance/external-sharing-exception-workflow.md) | Medium | Low | Medium | Power Automate |
+| [External Sharing Monitor](ideas/compliance/external-sharing-monitor.md) | Medium | Low | Medium | Power Automate |
 | [DLP Policy Tuning](ideas/compliance/dlp-policy-tuning.md) | High | Medium | Medium | Copilot Studio |
 
 ### Collaboration Agents (6)
@@ -120,9 +120,10 @@ All 35 agents grouped by domain. Impact, effort, and risk are rated Low / Medium
 | [Tenant Health Dashboard](ideas/collaboration/tenant-health-dashboard.md) | High | Medium | Low | Power Automate |
 | [Knowledge Base RAG](ideas/collaboration/knowledge-base-rag.md) | High | Low | Low | Declarative |
 | [Teams Meeting Notes](ideas/collaboration/teams-meeting-notes.md) | Medium | Low | Low | Declarative |
-| [License Optimization](ideas/collaboration/license-optimization.md) | Medium | Medium | Low | Power Automate |
+| [License Optimizer](ideas/collaboration/license-optimizer.md) | Medium | Medium | Low | Power Automate |
 | [Guest Access Policy](ideas/collaboration/guest-access-policy.md) | High | Medium | Medium | Copilot Studio |
 | [Change Advisory Board Prep](ideas/collaboration/change-advisory-board-prep.md) | Medium | Low | Low | Declarative |
+
 
 ---
 

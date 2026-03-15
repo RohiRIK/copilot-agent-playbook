@@ -70,50 +70,18 @@ nav:
     - Governance Framework: architecture/governance-framework.md
     - Reference Architecture: architecture/reference-architecture.md
     - Deployment Guide: architecture/deployment-guide.md
-  - Identity Agents:
-    - Break-Glass Validator: ideas/identity/break-glass-account-validator.md
-    - Secrets & Certs Expiry: ideas/identity/secrets-certificates-expiry.md
-    - Conditional Access Companion: ideas/identity/conditional-access-change-companion.md
-    - Entra Sign-In Risk Explainer: ideas/identity/entra-signin-risk-explainer.md
-    - MFA Registration Gap Finder: ideas/identity/mfa-registration-gap-finder.md
-    - Least Privilege Builder (PIM): ideas/identity/least-privilege-builder-pim.md
-    - App Registration Governance: ideas/identity/azure-app-registration-governance.md
-    - Onboarding Access Assistant: ideas/identity/onboarding-access-assistant.md
-    - Privileged Access Review: ideas/identity/privileged-access-review.md
-    - Passwordless Rollout Coach: ideas/identity/passwordless-rollout-coach.md
-  - Endpoint Agents:
-    - Device Compliance Drift: ideas/endpoint/device-compliance-drift.md
-    - Autopilot Readiness: ideas/endpoint/autopilot-readiness.md
-    - Intune Troubleshooting: ideas/endpoint/intune-troubleshooting.md
-    - App Packaging Advisor: ideas/endpoint/app-packaging-advisor.md
-    - Stale Device Cleanup: ideas/endpoint/stale-device-cleanup-planner.md
-  - SecOps Agents:
-    - Phishing Response: ideas/secops/phishing-response.md
-    - Offboarding Orchestrator: ideas/secops/offboarding-orchestrator.md
-    - SOC Triage Summarizer: ideas/secops/soc-triage-summarizer.md
-    - Incident Postmortem Generator: ideas/secops/incident-postmortem-generator.md
-    - Sentinel Workbook Builder: ideas/secops/sentinel-workbook-builder.md
-    - Exchange Mail Flow Diagnostic: ideas/secops/exchange-mail-flow-diagnostic.md
-    - Alert Noise Reduction: ideas/secops/alert-noise-reduction.md
-    - SharePoint Oversharing Finder: ideas/secops/sharepoint-oversharing-finder.md
-  - Compliance Agents:
-    - Copilot Readiness & Governance: ideas/compliance/copilot-readiness-governance.md
-    - Policy-to-Enforcement Mapper: ideas/compliance/policy-to-enforcement-mapper.md
-    - Data Classification Assistant: ideas/compliance/data-classification-assistant.md
-    - External Sharing Exception Workflow: ideas/compliance/external-sharing-exception-workflow.md
-    - DLP Policy Tuning: ideas/compliance/dlp-policy-tuning.md
-  - Collaboration Agents:
-    - Tenant Health Dashboard: ideas/collaboration/tenant-health-dashboard.md
-    - Knowledge Base RAG: ideas/collaboration/knowledge-base-rag.md
-    - Teams Meeting Notes: ideas/collaboration/teams-meeting-notes.md
-    - License Optimization: ideas/collaboration/license-optimization.md
-    - Guest Access Policy: ideas/collaboration/guest-access-policy.md
-    - Change Advisory Board Prep: ideas/collaboration/change-advisory-board-prep.md
-  - Examples:
-    - Zero Trust Identity Pack: examples/zero-trust-identity-pack/README.md
-    - SecOps Starter Pack: examples/secops-starter-pack/README.md
-    - Endpoint Governance Pack: examples/endpoint-governance-pack/README.md
-  - Research:
-    - Copilot Capabilities: research/copilot-capabilities.md
-    - Copilot Studio Guide: research/copilot-studio-guide.md
-    - Graph API Patterns: research/graph-api-patterns.md
+  - Ideas:
+    - Identity:
+      - ideas/identity/conditional-access-companion.md
+    - Productivity:
+      - ideas/productivity/smart-scheduling-focus-time.md
+      - ideas/productivity/weekly-status-report-generator.md
+      - ideas/productivity/email-triage-smart-reply.md
+      - ideas/productivity/meeting-action-item-tracker.md
+      - ideas/productivity/internal-comms-announcement-drafter.md
+      - ideas/productivity/document-summarizer-qa.md
+      - ideas/productivity/contract-renewal-tracker.md
+      - ideas/productivity/project-status-aggregator.md
+      - ideas/productivity/new-hire-onboarding-buddy.md
+      - ideas/productivity/sop-runbook-auto-updater.md
+  - ...

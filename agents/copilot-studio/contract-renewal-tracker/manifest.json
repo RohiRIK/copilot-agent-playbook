@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.0/schema.json",
+  "version": "v1.0",
+  "name": "Contract & Renewal Tracker",
+  "description": "Monitors vendor contracts in SharePoint, alerts owners before renewal deadlines, answers questions about contract terms, and initiates renewal workflows. Built in Copilot Studio with Power Automate flows for expiry alerting and approval-gated renewal initiation.",
+  "instructions": "See instructions.md for the full system prompt.",
+  "conversation_starters": [
+    {
+      "text": "Which vendor contracts expire in the next 90 days?"
+    },
+    {
+      "text": "What are our SLAs with the Salesforce contract?"
+    },
+    {
+      "text": "Initiate renewal for the Adobe Creative Cloud contract"
+    },
+    {
+      "text": "Show me all contracts without a tracked expiry date"
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "WebSearch",
+      "enabled": false
+    }
+  ],
+  "actions": [
+    {
+      "id": "dataverse-contract-plugin",
+      "file": "dataverse-plugin.json"
+    },
+    {
+      "id": "graph-sharepoint-plugin",
+      "file": "graph-plugin.json"
+    }
+  ]
+}

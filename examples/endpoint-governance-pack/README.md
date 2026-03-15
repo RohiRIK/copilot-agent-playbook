@@ -8,7 +8,7 @@ Deploy three endpoint agents together to maintain Intune compliance posture, sim
 |-------|-------------|---------|
 | [Device Compliance Drift](../../ideas/endpoint/device-compliance-drift.md) | Declarative | Surface devices drifting from compliance policies |
 | [Autopilot Readiness](../../ideas/endpoint/autopilot-readiness.md) | Declarative | Validate devices are ready for Autopilot enrollment |
-| [Stale Device Cleanup Planner](../../ideas/endpoint/stale-device-cleanup-planner.md) | Copilot Studio | Plan and execute stale device retirement safely |
+| [Stale Device Cleanup](../../ideas/endpoint/stale-device-cleanup.md) | Copilot Studio | Identifies and orchestrates the removal of stale device records. |
 
 ## Why These Three Together
 

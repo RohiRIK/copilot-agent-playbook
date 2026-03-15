@@ -148,5 +148,5 @@ flowchart TD
 ## Related Agents
 
 - [Privileged Access Review](../identity/privileged-access-review.md) — Regular reviews reduce the privileged access that needs to be revoked during offboarding
-- [Stale Device Cleanup Planner](../endpoint/stale-device-cleanup-planner.md) — Devices from departed employees become stale if offboarding is incomplete
+- [Stale Device Cleanup Planner](../endpoint/stale-device-cleanup.md) — Devices from departed employees become stale if offboarding is incomplete
 - [Phishing Response](phishing-response.md) — When offboarding is triggered by a security incident rather than voluntary departure

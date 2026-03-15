@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.0/schema.json",
+  "version": "v1.0",
+  "name": "Sentinel Workbook Builder",
+  "description": "Helps security engineers design KQL queries and Azure Monitor workbooks for Microsoft Sentinel. Ask me to write KQL, troubleshoot queries, or generate workbook JSON templates.",
+  "instructions": "See instructions.md for the full system prompt.",
+  "conversation_starters": [
+    { "text": "Write a KQL query showing top 20 users with failed sign-ins in the last 7 days" },
+    { "text": "Create a Sentinel workbook for SecurityAlert events by severity over 30 days" },
+    { "text": "My KQL query returns empty results — here it is: [query]" }
+  ],
+  "capabilities": [
+    { "name": "WebSearch", "enabled": false },
+    { "name": "OneDriveAndSharePoint", "items_by_url": [{ "url": "https://yourtenant.sharepoint.com/sites/SOC-KQLLibrary" }] }
+  ],
+  "actions": []
+}

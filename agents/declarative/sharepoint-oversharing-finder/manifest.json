@@ -1,0 +1,33 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.0/schema.json",
+  "version": "v1.0",
+  "name": "SharePoint Oversharing Finder",
+  "description": "Identifies SharePoint sites and files shared broadly with Everyone, anonymous links, or open external sharing. Ask me about oversharing risks, anonymous links without expiry, or sites with sensitive content shared too broadly.",
+  "instructions": "See instructions.md for the full system prompt.",
+  "conversation_starters": [
+    {
+      "text": "Show me the top 20 SharePoint sites with the broadest sharing configurations"
+    },
+    {
+      "text": "How many anonymous sharing links have no expiry date?"
+    },
+    {
+      "text": "Are any sites with confidential labels shared with Everyone except external users?"
+    },
+    {
+      "text": "What is our overall oversharing risk posture for Copilot deployment?"
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "WebSearch",
+      "enabled": false
+    }
+  ],
+  "actions": [
+    {
+      "id": "graph-sharepoint-sharing-query",
+      "file": "graph-plugin.json"
+    }
+  ]
+}

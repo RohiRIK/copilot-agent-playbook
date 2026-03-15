@@ -1,0 +1,14 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.0/schema.json",
+  "version": "v1.0",
+  "name": "Teams Meeting Notes",
+  "description": "Generates structured meeting notes, action items, and decision logs from Teams meeting transcripts. Ask me to summarize a meeting, extract action items, or list decisions made.",
+  "instructions": "See instructions.md for the full system prompt.",
+  "conversation_starters": [
+    { "text": "Summarize my 2pm meeting today and list the action items" },
+    { "text": "What decisions were made in the product roadmap meeting on March 10th?" },
+    { "text": "Save the notes from today's standup to our project SharePoint site" }
+  ],
+  "capabilities": [{ "name": "WebSearch", "enabled": false }],
+  "actions": [{ "id": "graph-teams-transcript-query", "file": "graph-plugin.json" }]
+}

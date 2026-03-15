@@ -1,0 +1,17 @@
+{
+  "schema_note": "Copilot Studio agent — built in Copilot Studio UI with Power Automate approval flows.",
+  "version": "v1.0",
+  "name": "App Registration Governance",
+  "description": "Audits app registrations for over-permissioned scopes, missing owners, stale credentials, and routes remediation through approval.",
+  "architecture": "copilot-studio",
+  "approval_required": true,
+  "instructions": "See instructions.md",
+  "conversation_starters": [
+    { "text": "Show me all app registrations with no assigned owner" },
+    { "text": "Which service principals have Mail permissions and no activity in 90 days?" },
+    { "text": "Run a governance audit and score all our app registrations by risk" }
+  ],
+  "topics": ["Governance audit", "Review specific app", "Show over-permissioned apps", "Monthly sweep summary"],
+  "power_automate_flows": ["Risk scoring engine", "Approval for deletion/permission reduction", "Monthly scheduled sweep"],
+  "graph_permissions": ["Application.Read.All", "AuditLog.Read.All", "Directory.Read.All"]
+}

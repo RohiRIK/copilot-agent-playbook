@@ -1,0 +1,14 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.0/schema.json",
+  "version": "v1.0",
+  "name": "Entra Sign-In Risk Explainer",
+  "description": "Translates Entra ID Protection risk events into plain-English explanations. Ask me about risky sign-ins, what triggered a risk detection, or how to triage a flagged user.",
+  "instructions": "See instructions.md for the full system prompt.",
+  "conversation_starters": [
+    { "text": "Why was john.smith@contoso.com flagged as high risk today?" },
+    { "text": "Explain what 'unfamiliar sign-in properties' means" },
+    { "text": "A user got an MFA prompt they didn't expect — what should I do?" }
+  ],
+  "capabilities": [{ "name": "WebSearch", "enabled": false }],
+  "actions": [{ "id": "graph-risk-detection-query", "file": "graph-plugin.json" }]
+}

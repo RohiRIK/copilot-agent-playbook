@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.0/schema.json",
+  "version": "v1.0",
+  "name": "Change Advisory Board Prep",
+  "description": "Helps change requestors prepare complete RFC submissions and helps CAB chairs run structured review meetings. Grounded in your change management policy.",
+  "instructions": "See instructions.md for the full system prompt.",
+  "conversation_starters": [
+    { "text": "Help me write a CAB submission for migrating Exchange transport rules" },
+    { "text": "What information do I need for my risk assessment?" },
+    { "text": "Summarize the 6 change requests submitted for Thursday's CAB meeting" }
+  ],
+  "capabilities": [
+    { "name": "WebSearch", "enabled": false },
+    { "name": "OneDriveAndSharePoint", "items_by_url": [{ "url": "https://yourtenant.sharepoint.com/sites/ChangeManagement" }] }
+  ],
+  "actions": []
+}

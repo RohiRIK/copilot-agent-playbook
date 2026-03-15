@@ -110,6 +110,6 @@ flowchart TD
 
 ## Related Agents
 
-- [Copilot Readiness & Governance](copilot-readiness-governance.md) — Label coverage is a key readiness domain
+- [Copilot Readiness & Governance](copilot-readiness-assessor.md) — Label coverage is a key readiness domain
 - [DLP Policy Tuning](dlp-policy-tuning.md) — DLP policies often reference sensitivity labels; better labeling improves DLP effectiveness
 - [SharePoint Oversharing Finder](../secops/sharepoint-oversharing-finder.md) — Labels help identify which broadly-shared content is most sensitive

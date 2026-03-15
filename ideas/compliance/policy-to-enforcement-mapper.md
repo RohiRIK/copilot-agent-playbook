@@ -123,4 +123,4 @@ flowchart TD
 
 - [DLP Policy Tuning](dlp-policy-tuning.md) — Tunes the DLP policies identified by the mapper
 - [Data Classification Assistant](data-classification-assistant.md) — Improves sensitivity label coverage identified as a gap
-- [Copilot Readiness & Governance](copilot-readiness-governance.md) — Policy-control mapping is part of the Copilot readiness assessment
+- [Copilot Readiness & Governance](copilot-readiness-assessor.md) — Policy-control mapping is part of the Copilot readiness assessment

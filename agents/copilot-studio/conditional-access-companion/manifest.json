@@ -1,0 +1,31 @@
+{
+  "schema_note": "Copilot Studio agent — built in Power Platform Copilot Studio UI, not deployed via declarative manifest. This file documents the bot configuration for reference.",
+  "version": "v1.0",
+  "name": "Conditional Access Change Companion",
+  "description": "Guides admins through CA policy changes, validates impact before apply, and requires approval for changes affecting >100 users or privileged roles.",
+  "architecture": "copilot-studio",
+  "approval_required": true,
+  "instructions": "See instructions.md for the full system prompt.",
+  "conversation_starters": [
+    { "text": "What would happen if I added compliant device requirement to All Users?" },
+    { "text": "I want to block legacy auth for guests — what's the blast radius?" },
+    { "text": "Review my planned CA change: adding SharePoint to MFA required apps" }
+  ],
+  "topics": [
+    "CA change impact assessment",
+    "Break-glass exclusion validation",
+    "Policy conflict detection",
+    "Approval routing for high-impact changes",
+    "Rollback plan generation"
+  ],
+  "power_automate_flows": [
+    "Impact assessment — resolve group sizes via Graph",
+    "Approval flow — route high-impact changes to security manager",
+    "Rollback artifact — export current policy state as JSON"
+  ],
+  "graph_permissions": [
+    "Policy.Read.All",
+    "Group.Read.All",
+    "User.Read.All"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.0/schema.json",
+  "version": "v1.0",
+  "name": "Document Summarizer & Q&A Agent",
+  "description": "Summarizes any SharePoint or OneDrive document on demand, answers questions about its content, compares document versions, and surfaces related documents. Ask me to summarize a document, answer a question about a policy, or compare two contract versions.",
+  "instructions": "See instructions.md for the full system prompt.",
+  "conversation_starters": [
+    {
+      "text": "Summarize the vendor agreement at [SharePoint URL] in 5 bullet points"
+    },
+    {
+      "text": "What are the termination clauses in the contract I just shared?"
+    },
+    {
+      "text": "Compare the Q3 and Q4 versions of the budget proposal"
+    },
+    {
+      "text": "What does section 4.2 of the data processing agreement say about retention?"
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "WebSearch",
+      "enabled": false
+    }
+  ],
+  "actions": [
+    {
+      "id": "graph-docs-plugin",
+      "file": "graph-plugin.json"
+    }
+  ]
+}

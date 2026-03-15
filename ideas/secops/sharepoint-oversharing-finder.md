@@ -130,6 +130,6 @@ flowchart TD
 
 ## Related Agents
 
-- [Copilot Readiness & Governance](../compliance/copilot-readiness-governance.md) — Oversharing remediation is a prerequisite for safe Copilot deployment
-- [External Sharing Exception Workflow](../compliance/external-sharing-exception-workflow.md) — Manages the approval process for new external sharing requests
+- [Copilot Readiness & Governance](../compliance/copilot-readiness-assessor.md) — Oversharing remediation is a prerequisite for safe Copilot deployment
+- [External Sharing Exception Workflow](../compliance/external-sharing-monitor.md) — Manages the approval process for new external sharing requests
 - [Data Classification Assistant](../compliance/data-classification-assistant.md) — Labels sensitive content so oversharing finder can prioritize high-risk sites

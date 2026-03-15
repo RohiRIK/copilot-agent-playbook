@@ -132,6 +132,6 @@ flowchart TD
 
 ## Related Agents
 
-- [External Sharing Exception Workflow](../compliance/external-sharing-exception-workflow.md) — Governs the initial granting of external access
+- [External Sharing Exception Workflow](../compliance/external-sharing-monitor.md) — Governs the initial granting of external access
 - [Privileged Access Review](../identity/privileged-access-review.md) — Guest users in privileged groups need elevated review priority
 - [Offboarding Orchestrator](../secops/offboarding-orchestrator.md) — Guest contractors should be offboarded via the same process as employees

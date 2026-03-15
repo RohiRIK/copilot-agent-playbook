@@ -143,6 +143,6 @@ flowchart TD
 
 ## Related Agents
 
-- [Least Privilege Builder (PIM)](least-privilege-builder-pim.md) — Converts permanent assignments to PIM before the review, reducing the review scope
-- [App Registration Governance](azure-app-registration-governance.md) — Reviews service principal assignments alongside human privileged access
+- [Least Privilege Builder (PIM)](least-privilege-builder.md) — Converts permanent assignments to PIM before the review, reducing the review scope
+- [App Registration Governance](app-registration-governance.md) — Reviews service principal assignments alongside human privileged access
 - [Offboarding Orchestrator](../secops/offboarding-orchestrator.md) — Removes privileged access immediately upon offboarding, reducing the access review backlog

@@ -126,5 +126,5 @@ Without this agent, teams typically rely on:
 
 ## Related Agents
 
-- [Related Agent 1](../domain/related-agent-1.md) — Brief description of relationship
-- [Related Agent 2](../domain/related-agent-2.md) — Brief description of relationship
+- [Related Agent 1](link-to-agent.md) — How this agent connects to others
+- [Related Agent 2](link-to-another.md) — Alternative approach

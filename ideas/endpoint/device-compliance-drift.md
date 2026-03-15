@@ -129,5 +129,5 @@ flowchart TD
 ## Related Agents
 
 - [Autopilot Readiness](autopilot-readiness.md) — Ensures devices are ready for compliant enrollment
-- [Stale Device Cleanup Planner](stale-device-cleanup-planner.md) — Devices that are perpetually non-compliant may be stale and should be removed
+- [Stale Device Cleanup Planner](stale-device-cleanup.md) — Devices that are perpetually non-compliant may be stale and should be removed
 - [Intune Troubleshooting](intune-troubleshooting.md) — Helps resolve the underlying issues causing compliance failures

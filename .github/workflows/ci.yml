@@ -1,0 +1,47 @@
+name: CI — Validate Agent Files
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'ideas/**'
+      - 'docs/**'
+      - 'mkdocs.yml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    name: Validate frontmatter and markdown
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install pyyaml python-frontmatter
+          npm install -g markdownlint-cli
+
+      - name: Validate YAML frontmatter
+        run: python scripts/build/generate-catalog.py --validate-only
+
+      - name: Lint markdown
+        run: |
+          markdownlint ideas/**/*.md docs/**/*.md \
+            --config .markdownlint.json \
+            --ignore ideas/_template.md || true
+
+      - name: Lint YAML files
+        run: |
+          pip install yamllint
+          yamllint mkdocs.yml
+
+      - name: Check for broken internal links
+        run: |
+          pip install mkdocs-material mkdocs-awesome-pages-plugin
+          mkdocs build --strict 2>&1 | grep -E "WARNING|ERROR" || true

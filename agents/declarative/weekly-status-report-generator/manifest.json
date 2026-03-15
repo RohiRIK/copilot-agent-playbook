@@ -1,0 +1,33 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.0/schema.json",
+  "version": "v1.0",
+  "name": "Weekly Status Report Generator",
+  "description": "Auto-drafts a professional weekly status report from your calendar events, completed tasks, and recent file activity. Ask me to generate your status report, draft an update for your manager, or summarize last week's accomplishments.",
+  "instructions": "See instructions.md for the full system prompt.",
+  "conversation_starters": [
+    {
+      "text": "Generate my status report for this week"
+    },
+    {
+      "text": "Draft a status update for the last two weeks and email it to my manager"
+    },
+    {
+      "text": "What did I accomplish last week?"
+    },
+    {
+      "text": "Post my weekly update to the team SharePoint page"
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "WebSearch",
+      "enabled": false
+    }
+  ],
+  "actions": [
+    {
+      "id": "graph-status-plugin",
+      "file": "graph-plugin.json"
+    }
+  ]
+}

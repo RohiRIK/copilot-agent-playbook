@@ -1,0 +1,33 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.0/schema.json",
+  "version": "v1.0",
+  "name": "Internal Comms & Announcement Drafter",
+  "description": "Drafts professional internal communications including all-hands announcements, policy updates, change notifications, and team newsletters for Teams, email, and SharePoint. Ask me to draft an announcement, write a policy update, or create a team newsletter.",
+  "instructions": "See instructions.md for the full system prompt.",
+  "conversation_starters": [
+    {
+      "text": "Draft a Teams announcement for all staff about office closure on March 20th"
+    },
+    {
+      "text": "Write a formal policy update email about changes to our expense policy"
+    },
+    {
+      "text": "Create a SharePoint News article celebrating our Q1 sales target"
+    },
+    {
+      "text": "Draft a change notification about next week's system maintenance window"
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "WebSearch",
+      "enabled": false
+    }
+  ],
+  "actions": [
+    {
+      "id": "graph-comms-plugin",
+      "file": "graph-plugin.json"
+    }
+  ]
+}

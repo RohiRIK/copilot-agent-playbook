@@ -144,4 +144,4 @@ flowchart TD
 
 - [Privileged Access Review](privileged-access-review.md) — Reviews the access granted during onboarding after 90 days
 - [Offboarding Orchestrator](../secops/offboarding-orchestrator.md) — The complementary offboarding process
-- [MFA Registration Gap Finder](mfa-registration-gap-finder.md) — Identifies new hires who haven't completed MFA registration
+- [MFA Registration Gap Finder](mfa-gap-finder.md) — Identifies new hires who haven't completed MFA registration

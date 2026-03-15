@@ -1,0 +1,33 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.0/schema.json",
+  "version": "v1.0",
+  "name": "Device Compliance Drift",
+  "description": "Queries Intune device compliance state on demand, surfaces non-compliant devices by policy, department, or user, and explains what specific compliance checks are failing. Ask me about compliance drift, failing policies, or devices in grace period.",
+  "instructions": "See instructions.md for the full system prompt.",
+  "conversation_starters": [
+    {
+      "text": "How many devices are currently non-compliant and what are the top failure reasons?"
+    },
+    {
+      "text": "Show me all Windows devices in Engineering that are non-compliant"
+    },
+    {
+      "text": "Which users have devices in grace period that will expire in the next 7 days?"
+    },
+    {
+      "text": "What is the overall compliance rate across our device estate?"
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "WebSearch",
+      "enabled": false
+    }
+  ],
+  "actions": [
+    {
+      "id": "graph-intune-compliance-query",
+      "file": "graph-plugin.json"
+    }
+  ]
+}
