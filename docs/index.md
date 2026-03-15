@@ -19,43 +19,16 @@ Welcome to the Copilot Agent Playbook — a curated, enterprise-grade reference 
 
 ## Architecture Overview
 
-```mermaid
-flowchart LR
-    subgraph T1["Tier 1 — Declarative"]
-        D1[Break-Glass Validator]
-        D2[MFA Gap Finder]
-        D3[Knowledge Base RAG]
-    end
+All agents connect to **Microsoft Graph** as their data backbone, with permissions scoped to the minimum required for each use case.
 
-    subgraph T2["Tier 2 — Power Automate"]
-        P1[Secret Expiry Monitor]
-        P2[Tenant Health Dashboard]
-        P3[License Optimizer]
-    end
+| Tier | Type | Complexity | Example Agents |
+|------|------|------------|----------------|
+| **Tier 1** | Declarative | Low | Break-Glass Validator, MFA Gap Finder, Knowledge Base RAG |
+| **Tier 2** | Power Automate | Medium | Secret Expiry Monitor, Tenant Health Dashboard, License Optimizer |
+| **Tier 3** | Copilot Studio | Medium–High | SOC Triage Summarizer, CA Change Companion, Phishing Response |
+| **Tier 4** | Hybrid | High | Offboarding Orchestrator, Passwordless Rollout, Copilot Readiness |
 
-    subgraph T3["Tier 3 — Copilot Studio"]
-        C1[SOC Triage Summarizer]
-        C2[CA Change Companion]
-        C3[Phishing Response]
-    end
-
-    subgraph T4["Tier 4 — Hybrid"]
-        H1[Offboarding Orchestrator]
-        H2[Passwordless Rollout Coach]
-        H3[Copilot Readiness]
-    end
-
-    T1 --> Graph[(Microsoft Graph)]
-    T2 --> Graph
-    T3 --> Graph
-    T4 --> Graph
-
-    Graph --> Entra[Entra ID]
-    Graph --> Defender[Defender XDR]
-    Graph --> Intune[Intune]
-    Graph --> Purview[Purview]
-    Graph --> Sentinel[Sentinel]
-```
+**Graph API surfaces used:** Entra ID · Defender XDR · Intune · Purview · Sentinel
 
 ---
 
