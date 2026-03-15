@@ -1,0 +1,18 @@
+{
+  "schema_version": "v2.1",
+  "name_for_human": "Smart Scheduling",
+  "name_for_model": "smartScheduling",
+  "description_for_human": "Access and manage your Microsoft 365 calendar for focus time blocking and scheduling",
+  "description_for_model": "Use this plugin to: (1) get free calendar slots for a given day filtered by 90+ min gaps and preferred focus windows, (2) create a focus time calendar event after user confirmation, (3) analyse weekly meeting load and detect anti-patterns like back-to-back meetings.",
+  "auth": {
+    "type": "none",
+    "instructions": "Flows use delegated OAuth via Power Automate connections. No additional auth required from the agent."
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://raw.githubusercontent.com/RohiRIK/copilot-agent-playbook/main/agents/declarative/smart-scheduling-focus-time/power-automate/openapi.json"
+  },
+  "logo_url": "https://rohirik.github.io/copilot-agent-playbook/assets/logo.png",
+  "contact_email": "rohi@oncld.io",
+  "legal_info_url": "https://rohirik.github.io/copilot-agent-playbook"
+}
