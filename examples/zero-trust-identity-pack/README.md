@@ -7,7 +7,7 @@ Deploy three identity agents together to establish a continuous Zero Trust ident
 | Agent | Architecture | Purpose |
 |-------|-------------|---------|
 | [Break-Glass Validator](../../ideas/identity/break-glass-validator.md) | Declarative | Validate emergency access accounts |
-| [MFA Registration Gap Finder](../../ideas/identity/mfa-registration-gap-finder.md) | Declarative | Find users without MFA registered |
+| [MFA Registration Gap Finder](../../ideas/identity/mfa-gap-finder.md) | Declarative | Find users without MFA registered |
 | [Least Privilege Builder](../../ideas/identity/least-privilege-builder.md) | Declarative | Identify standing privileged role assignments |
 
 ## Why These Three Together
