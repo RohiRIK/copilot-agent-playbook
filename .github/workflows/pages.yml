@@ -38,13 +38,15 @@ jobs:
 
       - name: Resolve symlinks in docs/
         run: |
-          for link in docs/ideas docs/agents docs/examples; do
+          cd docs
+          for link in ideas agents examples; do
             if [ -L "$link" ]; then
               target=$(readlink "$link")
               rm "$link"
               cp -r "$target" "$link"
             fi
           done
+          cd ..
 
       - name: Generate catalog files
         run: python scripts/build/generate-catalog.py
