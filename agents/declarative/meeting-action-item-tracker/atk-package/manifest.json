@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.25/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.25",
+  "version": "1.0.0",
+  "id": "${{TEAMS_APP_ID}}",
+  "developer": {
+    "name": "Copilot Agent Playbook",
+    "websiteUrl": "https://rohirik.github.io/copilot-agent-playbook",
+    "privacyUrl": "https://rohirik.github.io/copilot-agent-playbook",
+    "termsOfUseUrl": "https://rohirik.github.io/copilot-agent-playbook"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Meeting Action Tracker${{APP_NAME_SUFFIX}}",
+    "full": "Meeting Action Item Tracker — M365 Copilot Agent"
+  },
+  "description": {
+    "short": "Extract action items from Teams meetings into Planner tasks",
+    "full": "Extracts action items from Teams meeting transcripts, assigns owners, sets due dates, creates Microsoft Planner tasks, and sends automated reminders. Built on Microsoft 365 Copilot declarative agent framework."
+  },
+  "accentColor": "#FFFFFF",
+  "supportsChannelFeatures": "tier1",
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "declarativeAgent",
+        "file": "declarativeAgent.json"
+      }
+    ]
+  },
+  "validDomains": []
+}
